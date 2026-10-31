@@ -1,0 +1,54 @@
+div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.increment-btn {
+  background-color: #16a34a;
+}
+
+.increment-btn:hover {
+  background-color: #15803d;
+}
+
+.decrement-btn {
+  background-color: #dc2626;
+}
+
+.decrement-btn:hover {
+  background-color: #b91c1c;
+}
+
+.reset-btn {
+  background-color: #ea580c;
+}
+
+.reset-btn:hover {
+  background-color: #c2410c;
+}
+
+.switch-btn {
+  background-color: #9333ea;
+}
+
+.switch-btn:hover {
+  background-color: #7e22ce;
+}
