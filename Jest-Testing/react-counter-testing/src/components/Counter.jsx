@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './Counter.css'
 
-export default function Counter() {
-    const [count, setCount] = useState(0)
+export default function Counter({ initialCount = 0 }) {
+    const [count, setCount] = useState(initialCount)
 
     const increment = () => {
         setCount((prev) => prev + 1)
@@ -21,8 +21,8 @@ export default function Counter() {
     }
 
     return (
-<div className="counter-container">
-  <h2>Counter: {count}</h2>
+<div className="counter-container" >
+  <h2>Counter: <span data-testid="count">{count}</span></h2>
 
   <button className="increment-btn" onClick={increment}>Increment</button>
   <button className="decrement-btn" onClick={decrement}>Decrement</button>
